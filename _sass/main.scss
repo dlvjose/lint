@@ -1,0 +1,14 @@
+$dark: #101115;
+$light: #DBDDE0;
+$content-bg: #C4C4C4;
+
+body{
+    background-color: $light;
+    color: $dark;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, footer{
+    background-color: $dark;
+    color: $light;
+}
