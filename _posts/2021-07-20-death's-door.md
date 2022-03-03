@@ -2,9 +2,9 @@
 layout: post
 category: played
 thumbnail: "/assets/images/deaths-door.png"
+genre: Action, Adventure, Indie, RPG
 ---
 Death's Door
-Action, Adventure, Indie, RPG
 
 ["Review"](https://www.dlvjose.com/)
 ["External"](https://www.dlvjose.com/)
