@@ -21,9 +21,9 @@ title: Lint Media Log
 <main>
     <div class="container carousel-wrapper">
         <div class="carousel-container">
-            <ul class="carousel">
+            <div class="carousel">
                 {% for post in site.categories.watched limit: 1 %}
-                <li class="recent-post image-one">
+                <div class="recent-post">
                     <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
                         <div class="chips">
                             <span class="chip">{{ post.category | capitalize }}</span>
@@ -34,10 +34,11 @@ title: Lint Media Log
                     <h1>{{ post.title }}</h1>
                     <div class="icon icon__view"></div>
                     <div class="icon icon__link"></div>
-                </li>
+                </div>
                 {% endfor %}
+
                 {% for post in site.categories.read limit: 1 %}
-                <li class="recent-post image-two">
+                <div class="recent-post">
                     <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
                         <div class="chips">
                             <span class="chip">{{ post.category | capitalize }}</span>
@@ -48,10 +49,11 @@ title: Lint Media Log
                     <h1>{{ post.title }}</h1>
                     <div class="icon icon__view"></div>
                     <div class="icon icon__link"></div>
-                </li>
+                </div>
                 {% endfor %}
+                
                 {% for post in site.categories.played limit: 1 %}
-                <li class="recent-post image-three">
+                <div class="recent-post">
                     <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
                         <div class="chips">
                             <span class="chip">{{ post.category | capitalize }}</span>
@@ -62,9 +64,9 @@ title: Lint Media Log
                     <h1>{{ post.title }}</h1>
                     <div class="icon icon__view"></div>
                     <div class="icon icon__link"></div>
-                </li>
+                </div>
                 {% endfor %}
-            </ul>
+            </div>
         </div>
     </div>
 </main>
