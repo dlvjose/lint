@@ -16,6 +16,7 @@ header, footer{
 }
 
 main{
+    height: 80vh;
     background-color: $dark;
     border-radius: 0 0 1.5rem 1.5rem;
 }
@@ -68,39 +69,36 @@ h2{
     }
 }
 
-.showcase{
+.carousel{
     color: $light;
-    padding: 4rem 0;
 
-    img{
-        height: 588px;
-        margin-bottom: 2.5rem;
+    .recent-post{
+        width: 100%;
+        height: 100%;
+
+        .thumbnail{
+            height: 588px;
+            margin-bottom: 2.5rem;
+        }
     }
 }
 
-.recent-post, .post{
-    position: relative;
+.icon{
+    width: 32px;
+    height: 32px;
 
-    .chips{
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
+    &__view{
+        background-image: url('/assets/images/view-icon--dark.svg');
 
-        .chip{
-            margin-left: 1rem;
-            padding: .5rem 1rem;
-            background-color: $dark;
-            color: $light;
-            border-radius: 1.5rem;
+        &:hover{
+            background-image: url('/assets/images/view-icon--light.svg');
         }
     }
 
-    svg{
-        margin-right: 1rem;
-
+    &__link{
+        background-image: url('/assets/images/link-icon--dark.svg');
         &:hover{
-            fill: $light;
-            stroke: $dark;
+            background-image: url('/assets/images/link-icon--light.svg');
         }
     }
 }
@@ -115,15 +113,27 @@ h2{
         margin-bottom: 1.5rem;
         padding: 1rem;
         border-radius: 1.5rem;
-        border: 2px solid $dark;
+        border: 2px solid $dark;}
+}
 
-        .chips{
-            top: 2rem;
-            right: 2rem;
-        }
+.thumbnail{
+    position: relative;
+    min-height: 226px;
+    border-radius: 24px;
+    background-position: center;
+    background-size: cover;
 
-        img{
-            height: 226px;
+    .chips{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+
+        .chip{
+            margin-left: 1rem;
+            padding: .5rem 1rem;
+            background-color: $dark;
+            color: $light;
+            border-radius: 1.5rem;
         }
     }
-}
+}        
