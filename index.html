@@ -22,8 +22,36 @@ title: Lint Media Log
     <div class="container carousel-wrapper">
         <div class="carousel-container">
             <ul class="carousel">
-                {% for post in site.posts limit: 3 %}
+                {% for post in site.categories.watched limit: 1 %}
                 <li class="recent-post image-one">
+                    <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
+                        <div class="chips">
+                            <span class="chip">{{ post.category | capitalize }}</span>
+                            <span class="chip">{{ post.date | date: "%Y" }}</span>
+                        </div>
+                    </div>
+                    <span>{{ post.genre }}</span>
+                    <h1>{{ post.title }}</h1>
+                    <div class="icon icon__view"></div>
+                    <div class="icon icon__link"></div>
+                </li>
+                {% endfor %}
+                {% for post in site.categories.read limit: 1 %}
+                <li class="recent-post image-two">
+                    <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
+                        <div class="chips">
+                            <span class="chip">{{ post.category | capitalize }}</span>
+                            <span class="chip">{{ post.date | date: "%Y" }}</span>
+                        </div>
+                    </div>
+                    <span>{{ post.genre }}</span>
+                    <h1>{{ post.title }}</h1>
+                    <div class="icon icon__view"></div>
+                    <div class="icon icon__link"></div>
+                </li>
+                {% endfor %}
+                {% for post in site.categories.played limit: 1 %}
+                <li class="recent-post image-three">
                     <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
                         <div class="chips">
                             <span class="chip">{{ post.category | capitalize }}</span>
