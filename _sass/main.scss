@@ -72,8 +72,9 @@ h2{
     color: $light;
 
     .recent-post{
-        width: 100%;
+        width: 1200px;
         height: 100%;
+        overflow: hidden;
 
         .thumbnail{
             height: 588px;
@@ -82,19 +83,22 @@ h2{
     }
 }
 
-.icon{
-    width: 32px;
-    height: 32px;
+.icons{
+    display: flex;
 
-    &__view{
+    .icon__view{
+        width: 32px;
+        height: 32px;
+        margin-right: 1rem;
         background-image: url('/assets/images/view-icon--dark.svg');
-
         &:hover{
             background-image: url('/assets/images/view-icon--light.svg');
         }
     }
 
-    &__link{
+    .icon__link{
+        width: 32px;
+        height: 32px;
         background-image: url('/assets/images/link-icon--dark.svg');
         &:hover{
             background-image: url('/assets/images/link-icon--light.svg');
@@ -135,4 +139,15 @@ h2{
             border-radius: 1.5rem;
         }
     }
-}        
+}
+
+@media only screen and (max-width: 767px) {
+    h1{
+        font-size: 3rem;
+    }
+    .posts-list{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 580px) {}
+
