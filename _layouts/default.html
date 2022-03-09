@@ -17,15 +17,28 @@
 
 <script src="assets/js/siema.min.js"></script>
 <script>
-    new Siema({
-            selector: '.carousel',
-            duration: 400,
-            easing: 'ease-out',
-            draggable: true,
-            multipleDrag: true,
-            threshold: 24,
-            loop: true,
-        });
+    const mySiema = new Siema({
+        selector: '.carousel',
+        duration: 350,
+        loop: true
+    });
+
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+
+    prev.addEventListener("click", () => mySiema.prev());
+    next.addEventListener("click", () => mySiema.next());
+
+    setInterval(() => mySiema.next(), 6000);
+
+    document.addEventListener('keydown', e => {
+        if (e.keyCode === 37) {
+            mySiema.prev();
+        }
+        else if (e.keyCode === 39) {
+            mySiema.next();
+        }
+    });
 </script>
 
 </html>
