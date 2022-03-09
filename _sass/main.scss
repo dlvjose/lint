@@ -84,6 +84,7 @@ h2{
 
 .icons{
     display: flex;
+    padding-top: 1rem;
 
     .icon__view{
         width: 32px;
@@ -109,7 +110,7 @@ h2{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    
     .post{
         width: 32%;
         margin-bottom: 1.5rem;
@@ -121,14 +122,15 @@ h2{
 .thumbnail{
     position: relative;
     min-height: 226px;
+    margin-bottom: 1rem;
     border-radius: 24px;
     background-position: center;
     background-size: cover;
 
     .chips{
         position: absolute;
-        top: 2rem;
-        right: 2rem;
+        top: 1.5rem;
+        right: 1.5rem;
 
         .chip{
             margin-left: 1rem;

@@ -6,7 +6,7 @@ title: Lint Media Log
     <div class="container">
         <div class="flex-row">
             <div class="logo">
-                <img src="assets/images/lint-logo.svg">
+                <img src="assets/images/lint-logo.svg" alt="Logo with the word lint spelled out.">
                 <span>Media Log</span>
             </div>
             <div class="flex-row">
@@ -31,8 +31,10 @@ title: Lint Media Log
                 <span>{{ post.genre }}</span>
                 <h1>{{ post.title }}</h1>
                 <div class="icons">
-                    <div class="icon icon__view"></div>
-                    <div class="icon icon__link"></div>
+                    <!-- <div class="icon icon__view"></div> -->
+                    <a href="{{ post.external-link }}" target="_blank" rel="noopener">
+                        <div class="icon icon__link"></div>
+                    </a>
                 </div>
             </div>
             {% endfor %}
@@ -47,8 +49,10 @@ title: Lint Media Log
                 <span>{{ post.genre }}</span>
                 <h1>{{ post.title }}</h1>
                 <div class="icons">
-                    <div class="icon icon__view"></div>
-                    <div class="icon icon__link"></div>
+                    <!-- <div class="icon icon__view"></div> -->
+                    <a href="{{ post.external-link }}" target="_blank" rel="noopener">
+                        <div class="icon icon__link"></div>
+                    </a>
                 </div>
             </div>
             {% endfor %}
@@ -63,8 +67,10 @@ title: Lint Media Log
                 <span>{{ post.genre }}</span>
                 <h1>{{ post.title }}</h1>
                 <div class="icons">
-                    <div class="icon icon__view"></div>
-                    <div class="icon icon__link"></div>
+                    <!-- <div class="icon icon__view"></div> -->
+                    <a href="{{ post.external-link }}" target="_blank" rel="noopener">
+                        <div class="icon icon__link"></div>
+                    </a>
                 </div>
             </div>
             {% endfor %}
@@ -85,8 +91,10 @@ title: Lint Media Log
             <span>{{ post.genre }}</span>
             <h2>{{ post.title }}</h2>
             <div class="icons">
-                <div class="icon icon__view"></div>
-                <div class="icon icon__link"></div>
+                <!-- <div class="icon icon__view"></div> -->
+                <a href="{{ post.external-link }}">
+                    <div class="icon icon__link"></div>
+                </a>
             </div>
         </li>
         {% endfor %}
