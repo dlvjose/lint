@@ -76,7 +76,7 @@ h2{
     color: $light;
 
     .thumbnail{
-        height: 588px;
+        height: 500px;
         margin-bottom: 2.5rem;
     }
 }
@@ -91,6 +91,7 @@ h2{
         height: 32px;
         margin-right: 1rem;
         background-image: url('/assets/images/view-icon--dark.svg');
+        transition: all .25s;
         &:hover{
             background-image: url('/assets/images/view-icon--light.svg');
         }
@@ -100,8 +101,30 @@ h2{
         width: 32px;
         height: 32px;
         background-image: url('/assets/images/link-icon--dark.svg');
+        transition: all .25s;
         &:hover{
             background-image: url('/assets/images/link-icon--light.svg');
+        }
+    }
+
+    .icon__view--reverse{
+        width: 32px;
+        height: 32px;
+        margin-right: 1rem;
+        background-image: url('/assets/images/view-icon--light.svg');
+        transition: all .25s;
+        &:hover{
+            background-image: url('/assets/images/view-icon--dark.svg');
+        }
+    }
+
+    .icon__link--reverse{
+        width: 32px;
+        height: 32px;
+        background-image: url('/assets/images/link-icon--light.svg');
+        transition: all .25s;
+        &:hover{
+            background-image: url('/assets/images/link-icon--dark.svg');
         }
     }
 }
