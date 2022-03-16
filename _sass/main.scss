@@ -129,17 +129,23 @@ h2{
     }
 }
 
-.posts-list{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
+.posts-list{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    margin: 0 -1.5rem; 
+
     .post{
-        width: 32%;
-        margin-bottom: 1.5rem;
-        padding: 1rem;
-        border-radius: 1.5rem;
-        border: 2px solid $dark;}
+        flex: 1 0 calc(100%/3);
+        min-width: 400px;
+        border: .75rem solid transparent;
+        &__inner{
+            height: 100%;
+            padding: 1rem;
+            border-radius: 1.5rem;
+            border: 2px solid $dark;
+        }
+    }
 }
 
 .thumbnail{
@@ -156,11 +162,12 @@ h2{
         right: 1.5rem;
 
         .chip{
-            margin-left: 1rem;
-            padding: .5rem 1rem;
+            margin-left: .5rem;
+            padding: .5rem .75rem;
+            border-radius: 1.5rem;
+            font-size: .75rem;
             background-color: $dark;
             color: $light;
-            border-radius: 1.5rem;
         }
     }
 }
@@ -176,4 +183,3 @@ h2{
     }
 }
 @media only screen and (max-width: 580px) {}
-

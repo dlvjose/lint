@@ -20,61 +20,7 @@ title: Lint Media Log
 <main>
     <div class="container">
         <div class="carousel">
-            {% for post in site.categories.watched limit: 1 %}
-            <div class="recent-post">
-                <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
-                    <div class="chips">
-                        <span class="chip">{{ post.category | capitalize }}</span>
-                        <span class="chip">{{ post.date | date: "%Y" }}</span>
-                    </div>
-                </div>
-                <span>{{ post.genre }}</span>
-                <h1>{{ post.title }}</h1>
-                <div class="icons">
-                    <!-- <div class="icon icon__view"></div> -->
-                    <a href="{{ post.external-link }}" target="_blank" rel="noopener">
-                        <div class="icon icon__link"></div>
-                    </a>
-                </div>
-            </div>
-            {% endfor %}
-            {% for post in site.categories.read limit: 1 %}
-            <div class="recent-post">
-                <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
-                    <div class="chips">
-                        <span class="chip">{{ post.category | capitalize }}</span>
-                        <span class="chip">{{ post.date | date: "%Y" }}</span>
-                    </div>
-                </div>
-                <span>{{ post.genre }}</span>
-                <h1>{{ post.title }}</h1>
-                <div class="icons">
-                    <!-- <div class="icon icon__view"></div> -->
-                    <a href="{{ post.external-link }}" target="_blank" rel="noopener">
-                        <div class="icon icon__link"></div>
-                    </a>
-                </div>
-            </div>
-            {% endfor %}
-            {% for post in site.categories.played limit: 1 %}
-            <div class="recent-post">
-                <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
-                    <div class="chips">
-                        <span class="chip">{{ post.category | capitalize }}</span>
-                        <span class="chip">{{ post.date | date: "%Y" }}</span>
-                    </div>
-                </div>
-                <span>{{ post.genre }}</span>
-                <h1>{{ post.title }}</h1>
-                <div class="icons">
-                    <!-- <div class="icon icon__view"></div> -->
-                    <a href="{{ post.external-link }}" target="_blank" rel="noopener">
-                        <div class="icon icon__link"></div>
-                    </a>
-                </div>
-            </div>
-            {% endfor %}
-            {% for post in site.categories.listened limit: 1 %}
+            {% for post in site.posts limit: 4 %}
             <div class="recent-post">
                 <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
                     <div class="chips">
@@ -100,19 +46,21 @@ title: Lint Media Log
     <ul class="posts-list">
         {% for post in site.posts %}
         <li class="post">
-            <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
-                <div class="chips">
-                    <span class="chip">{{ post.category | capitalize }}</span>
-                    <span class="chip">{{ post.date | date: "%Y" }}</span>
+            <div class="post__inner">
+                <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
+                    <div class="chips">
+                        <span class="chip">{{ post.category | capitalize }}</span>
+                        <span class="chip">{{ post.date | date: "%Y" }}</span>
+                    </div>
                 </div>
-            </div>
-            <span>{{ post.genre }}</span>
-            <h2>{{ post.title }}</h2>
-            <div class="icons">
-                <!-- <div class="icon icon__view"></div> -->
-                <a href="{{ post.external-link }}">
-                    <div class="icon icon__link"></div>
-                </a>
+                <span>{{ post.genre }}</span>
+                <h2>{{ post.title }}</h2>
+                <div class="icons">
+                    <!-- <div class="icon icon__view"></div> -->
+                    <a href="{{ post.external-link }}">
+                        <div class="icon icon__link"></div>
+                    </a>
+                </div>
             </div>
         </li>
         {% endfor %}
