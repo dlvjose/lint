@@ -45,13 +45,13 @@ title: Lint Media Log
 <section class="container">
     <div class="category-filters">
         <button id="All" onclick="filterUsingCategory('All')">
-            *Show All Posts*
+            All
         </button>
         {% assign categories = site.categories | sort %}
         {% for category in categories %}
         {% assign cat = category | first %}
         <button id="{{ cat }}" onclick="filterUsingCategory(this.id)">
-            {{ cat }}
+            {{ cat | capitalize }}
         </button>
         {% endfor %}
     </div>

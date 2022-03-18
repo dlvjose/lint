@@ -68,7 +68,6 @@ h2{
     }
 }
 
-
 .recent-post{
     width: 100%;
     height: 100%;
@@ -81,6 +80,65 @@ h2{
     }
 }
 
+
+.category-filters{
+    margin: 1.5rem 0;
+    button{
+        margin-right: 1rem;
+        padding: .5rem 1rem;
+        height: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        color: $light;
+        background-color: $dark;
+        border-radius: 1.5rem;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.posts-list{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    margin: 0 -1.5rem; 
+
+    .post{
+        flex: 1 0 calc(100%/3);
+        min-width: 400px;
+        border: .75rem solid transparent;
+        &__inner{
+            height: 100%;
+            padding: 1rem;
+            border-radius: 1.5rem;
+            border: 2px solid $dark;
+        }
+    }
+}
+
+.thumbnail{
+    position: relative;
+    min-height: 226px;
+    margin-bottom: 1rem;
+    border-radius: 24px;
+    background-position: center;
+    background-size: cover;
+
+    .chips{
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+
+        .chip{
+            margin-left: .5rem;
+            padding: .5rem .75rem;
+            border-radius: 1.5rem;
+            font-size: .75rem;
+            background-color: $dark;
+            color: $light;
+        }
+    }
+}
 
 .icons{
     display: flex;
@@ -125,49 +183,6 @@ h2{
         transition: all .25s;
         &:hover{
             background-image: url('/assets/images/link-icon--dark.svg');
-        }
-    }
-}
-
-.posts-list{ 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: flex-start;
-    margin: 0 -1.5rem; 
-
-    .post{
-        flex: 1 0 calc(100%/3);
-        min-width: 400px;
-        border: .75rem solid transparent;
-        &__inner{
-            height: 100%;
-            padding: 1rem;
-            border-radius: 1.5rem;
-            border: 2px solid $dark;
-        }
-    }
-}
-
-.thumbnail{
-    position: relative;
-    min-height: 226px;
-    margin-bottom: 1rem;
-    border-radius: 24px;
-    background-position: center;
-    background-size: cover;
-
-    .chips{
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-
-        .chip{
-            margin-left: .5rem;
-            padding: .5rem .75rem;
-            border-radius: 1.5rem;
-            font-size: .75rem;
-            background-color: $dark;
-            color: $light;
         }
     }
 }
