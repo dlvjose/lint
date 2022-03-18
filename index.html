@@ -43,9 +43,23 @@ title: Lint Media Log
 </main>
 
 <section class="container">
-    <ul class="posts-list">
+    <div class="category-filters">
+        <button id="All" onclick="filterUsingCategory('All')">
+            *Show All Posts*
+        </button>
+        {% assign categories = site.categories | sort %}
+        {% for category in categories %}
+        {% assign cat = category | first %}
+        <button id="{{ cat }}" onclick="filterUsingCategory(this.id)">
+            {{ cat }}
+        </button>
+        {% endfor %}
+    </div>
+    <div class="posts-list">
+        {% assign id = 0 %}
         {% for post in site.posts %}
-        <li class="post">
+        {% assign id = id | plus:1 %}
+        <div class="post" id="{{id}}">
             <div class="post__inner">
                 <div class="thumbnail" style="background-image: url('{{ post.thumbnail }}');">
                     <div class="chips">
@@ -62,9 +76,24 @@ title: Lint Media Log
                     </a>
                 </div>
             </div>
-        </li>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 </section>
 
 {% include footer.html %}
+
+<script type="text/javascript">
+    function filterUsingCategory(selectedCategory) {
+        var id = 0;
+        {% for post in site.posts %}
+        var cats = {{ post.categories | jsonify
+    }}
+
+    var postDiv = document.getElementById(++id);
+    postDiv.style.display = (selectedCategory == 'All' || cats.includes(selectedCategory))
+        ? 'unset'
+        : 'none';
+    {% endfor %}
+  }
+</script>
