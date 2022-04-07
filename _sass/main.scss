@@ -96,7 +96,7 @@ h2{
         border: 2px solid $dark;
         cursor: pointer;
         transition: all .25s;
-        
+
         &:hover{
             color: $light;
             background-color: $dark;
@@ -109,11 +109,11 @@ h2{
     }
 }
 
-.posts-list{ 
-    display: flex; 
-    flex-wrap: wrap; 
+.posts-list{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 0 -1rem; 
+    margin: 0 -1rem;
 
     .post{
         flex: 1 0 calc(100%/3);
@@ -209,4 +209,3 @@ h2{
         }
     }
 }
-@media only screen and (max-width: 580px) {}
