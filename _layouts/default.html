@@ -19,13 +19,14 @@
 
 <body>
     {{ content }}
+    {% include footer.html %}
 </body>
 
 <script src="assets/js/siema.min.js"></script>
 <script>
     const mySiema = new Siema({
         selector: '.carousel',
-        duration: 350
+        duration: 350,
     });
 
     const prev = document.querySelector(".prev");
