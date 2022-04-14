@@ -1,6 +1,6 @@
 ---
 layout: post
-category: read
+category: watched
 thumbnail: "/assets/images/arcane-league-of-legends.jpg"
 genre: Action adventure animated series
 external-link: https://www.imdb.com/title/tt11126994/
