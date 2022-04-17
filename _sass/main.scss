@@ -29,10 +29,6 @@ a{
     }
 }
 
-img{
-    border-radius: 1.5rem;
-}
-
 h1{
     font-size: 4.5rem;
     font-weight: 700;
@@ -60,6 +56,15 @@ h2{
     font-size: 1.125rem;
     color: $light;
     cursor: pointer;
+
+    img{
+        width: 1.5rem;
+        transition: width .2s ease-in-out;
+
+        &:hover{
+            width: 1.75rem;
+        }
+    }
 }
 
 .logo{
