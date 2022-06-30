@@ -2,7 +2,7 @@
 layout: post
 category: watched
 thumbnail: "/assets/images/the-bad-guys.webp"
-genre: Adventure Comedy Animated Movie
+genre: Adventure comedy animated movie
 external-link: https://www.imdb.com/title/tt8115900/
 rating: 8/10
 ---
