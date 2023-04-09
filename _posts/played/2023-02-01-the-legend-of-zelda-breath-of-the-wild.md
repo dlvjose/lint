@@ -1,7 +1,7 @@
 ---
 layout: post
 category: played
-thumbnail: "/assets/images/breathe-of-the-wild.jpg"
+thumbnail: "/assets/images/breath-of-the-wild.jpg"
 genre: Action advanture RPG
 external-link: https://www.zelda.com/breath-of-the-wild/
 rating: 8/10
