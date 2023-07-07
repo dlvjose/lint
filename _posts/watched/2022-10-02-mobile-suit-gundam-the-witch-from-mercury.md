@@ -1,7 +1,7 @@
 ---
 layout: post
 category: watched
-thumbnail: "/assets/images/with-from-mercury.jpg"
+thumbnail: "/assets/images/witch-from-mercury.jpg"
 genre: Action sci-fi series
 external-link: https://www.imdb.com/title/tt15433166/
 rating: 7/10
