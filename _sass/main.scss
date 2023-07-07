@@ -148,7 +148,7 @@ h2{
     position: relative;
     min-height: 226px;
     margin-bottom: 1rem;
-    border-radius: 24px;
+    border-radius: 0.5rem;
     background-position: center;
     background-size: cover;
 
@@ -173,8 +173,8 @@ h2{
     padding-top: 1rem;
 
     .icon__view{
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         margin-right: 1rem;
         background-image: url('/assets/images/view-icon--dark.svg');
         transition: all .25s;
@@ -184,8 +184,8 @@ h2{
     }
 
     .icon__link{
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         background-image: url('/assets/images/link-icon--dark.svg');
         transition: all .25s;
         &:hover{
@@ -194,8 +194,8 @@ h2{
     }
 
     .icon__view--reverse{
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         margin-right: 1rem;
         background-image: url('/assets/images/view-icon--light.svg');
         transition: all .25s;
@@ -205,8 +205,8 @@ h2{
     }
 
     .icon__link--reverse{
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         background-image: url('/assets/images/link-icon--light.svg');
         transition: all .25s;
         &:hover{
