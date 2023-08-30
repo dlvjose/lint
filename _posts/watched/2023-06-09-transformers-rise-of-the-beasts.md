@@ -2,7 +2,7 @@
 layout: post
 category: watched
 thumbnail: "/assets/images/tf-rise-of-the-beasts.jpg"
-genre: Animated action adventure
+genre: Action adventure
 external-link: https://www.imdb.com/title/tt5090568/
 rating: 7/10
 ---
