@@ -2,7 +2,7 @@
 layout: post
 category: watched
 thumbnail: "/assets/images/chainsaw-man.webp"
-genre: Animated Action Series
+genre: Animated action series
 external-link: https://www.imdb.com/title/tt13616990/
 rating: 8/10
 ---
