@@ -2,7 +2,7 @@
 layout: post
 category: played
 thumbnail: "/assets/images/totk.jpg"
-genre: Action advanture RPG
+genre: Action adventure RPG
 external-link: https://www.zelda.com/tears-of-the-kingdom/
 rating: 9/10
 ---
