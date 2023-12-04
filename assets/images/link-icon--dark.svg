@@ -5,7 +5,7 @@
 <path d="M18.3999 8.79999H23.1999V13.6" stroke="#DBDDE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M14.3999 17.6L23.1999 8.79999" stroke="#DBDDE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<rect x="1" y="1" width="30" height="30" rx="15" stroke="#DBDDE0" stroke-width="2"/>
+<rect x="1" y="1" width="30" height="30" rx="15" stroke="#101115" stroke-width="2"/>
 <defs>
 <clipPath id="clip0_859_1187">
 <rect width="16" height="16" fill="white" transform="translate(8 8)"/>
