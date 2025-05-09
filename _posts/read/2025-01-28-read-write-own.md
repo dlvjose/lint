@@ -2,7 +2,7 @@
 layout: post
 category: read
 thumbnail: "/assets/images/read-write-own.jpg"
-genre: Technology book
+genre: Technology
 external-link: https://readwriteown.com/
 rating: 7/10
 ---
