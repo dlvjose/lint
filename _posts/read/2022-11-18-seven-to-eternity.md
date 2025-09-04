@@ -3,7 +3,7 @@ layout: post
 category: read
 thumbnail: "/assets/images/series-seventoeternity.jpg"
 genre: Fantasy graphic novel
-external-link: https://imagecomics.com/comics/series/seven-to-eternity
+external-link: https://bookshop.org/a/113608/9781534300613
 rating: 8/10
 ---
 Seven To Eternity
@@ -12,4 +12,4 @@ I'm conflicted with this series. Parts of it make me want to continue reading it
 
 This series turned around for me. The story built itself very nicely and the plot twists were unpredictable.
 
-["External"](https://imagecomics.com/comics/series/seven-to-eternity)
+["External"](https://bookshop.org/a/113608/9781534300613)
