@@ -4,7 +4,7 @@ category: watched
 thumbnail: "/assets/images/the-prestige.webp"
 genre: Drama mystery movie
 external-link: https://www.imdb.com/title/tt0482571/
-rating: 7/10
+rating: 8/10
 ---
 The Prestige
 8/10
